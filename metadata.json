@@ -1,0 +1,8 @@
+{
+  "name": "Kids Puzzle Quest",
+  "description": "An interactive, colorful puzzle game featuring educational challenges and a rewarding system to keep children engaged and learning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

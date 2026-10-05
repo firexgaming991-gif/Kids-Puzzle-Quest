@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Tactile 3D button press effects for kids */
+  .btn-tactile-yellow {
+    background-color: #FBBF24;
+    border-bottom: 5px solid #D97706;
+    transition: all 0.12s ease;
+  }
+  .btn-tactile-yellow:active {
+    border-bottom-width: 1px;
+    transform: translateY(4px);
+  }
+
+  .btn-tactile-emerald {
+    background-color: #10B981;
+    border-bottom: 5px solid #047857;
+    transition: all 0.12s ease;
+  }
+  .btn-tactile-emerald:active {
+    border-bottom-width: 1px;
+    transform: translateY(4px);
+  }
+
+  .btn-tactile-sky {
+    background-color: #0284C7;
+    border-bottom: 5px solid #0369A1;
+    transition: all 0.12s ease;
+  }
+  .btn-tactile-sky:active {
+    border-bottom-width: 1px;
+    transform: translateY(4px);
+  }
+
+  .btn-tactile-rose {
+    background-color: #F43F5E;
+    border-bottom: 5px solid #BE123C;
+    transition: all 0.12s ease;
+  }
+  .btn-tactile-rose:active {
+    border-bottom-width: 1px;
+    transform: translateY(4px);
+  }
+
+  .btn-tactile-purple {
+    background-color: #A855F7;
+    border-bottom: 5px solid #7E22CE;
+    transition: all 0.12s ease;
+  }
+  .btn-tactile-purple:active {
+    border-bottom-width: 1px;
+    transform: translateY(4px);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-float {
+  animation: float-slow 3.5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+/* Kid background pattern */
+.bg-kids-pattern {
+  background-color: #f7fee7;
+  background-image: radial-gradient(#bbf7d0 1.2px, transparent 1.2px), radial-gradient(#fef08a 1.2px, #f7fee7 1.2px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
